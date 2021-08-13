@@ -3,8 +3,6 @@
 
 #include "component.h"
 
-class Kontroller;
-
 class A: Component
 {
 public:
