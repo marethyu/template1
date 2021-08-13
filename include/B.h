@@ -3,7 +3,7 @@
 
 #include "component.h"
 
-class B: Component
+class B: public Component
 {
 public:
     B(Kontroller *kontrol);
