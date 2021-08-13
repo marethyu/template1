@@ -9,10 +9,10 @@ For developing C++ applications in Windows.
 ## How to
 To build, type the below line in the command prompt
 ```
-script make
+mingw32-make
 ```
 
 To clean, type the below line in the command prompt
 ```
-script clean
+mingw32-make clean
 ```

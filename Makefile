@@ -5,6 +5,7 @@ CXXFLAGS = -std=c++14 -Wall -fmax-errors=5
 LINKFLAGS := -lSDL2
 
 .PHONY: all
+.PHONY: clean
 
 SRC_PATH := ./src/
 OBJ_PATH := ./obj/
@@ -28,3 +29,7 @@ $(TARGET): $(OBJ)
 $(OBJ_PATH)%.o: $(SRC_PATH)%.cpp
 	@echo [CXX] $<
 	@$(CXX) $(CXXFLAGS) -o $@ -c $< -I $(INC_PATH)
+
+clean:
+	del /q obj\*.o
+	del /q bin\main.exe
