@@ -31,5 +31,5 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.cpp
 	@$(CXX) $(CXXFLAGS) -o $@ -c $< -I $(INC_PATH)
 
 clean:
-	del /q obj\*.o
-	del /q bin\main.exe
+	if exist obj\*.o del /q obj\*.o
+	if exist bin\main.exe del /q bin\main.exe

@@ -7,6 +7,9 @@ For developing C++ applications in Windows.
 - TDM-GCC (64-bit) with SDL2 installed
 
 ## How to
+
+Run `setup.bat` first before anything else.
+
 To build, type the below line in the command prompt
 ```
 mingw32-make
